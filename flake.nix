@@ -37,6 +37,7 @@
               scipy
               numba
               ipywidgets
+              ipython
               librosa
               scikit-image
               scikit-learn

@@ -32,6 +32,8 @@
               torch
               torchaudio
               torchvision
+              pytorch-lightning
+              torchmetrics
               numpy
               matplotlib
               scipy

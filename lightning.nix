@@ -3,6 +3,7 @@
 , fetchPypi
 , setuptools
 , wheel
+, pkgs
 }:
 
 buildPythonPackage rec {
@@ -16,6 +17,17 @@ buildPythonPackage rec {
 
   # do not run tests
   doCheck = false;
+
+  propagatedBuildInputs = with pkgs.python312Packages; [
+    pyyaml
+    fsspec
+    lightning-utilities
+    torch
+    torchmetrics
+    tqdm
+    typing-extensions
+    pytorch-lightning
+  ];
 
   # specific to buildPythonPackage, see its reference
   pyproject = true;

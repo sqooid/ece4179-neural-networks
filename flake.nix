@@ -47,11 +47,20 @@
               transformers
               imageio
               pandas
+              lightning
+              torchsummary
             ];
+            python = pkgs.python312.override {
+              self = python;
+              packageOverrides = pyfinal: pyprev: {
+                lightning = pyfinal.callPackage ./lightning.nix { };
+                torchsummary = pyfinal.callPackage ./torchsummary.nix { };
+              };
+            };
           in
           {
             default = pkgs.mkShell {
-              buildInputs = with pkgs; [ (python312.withPackages pp) ];
+              buildInputs = with pkgs; [ (python.withPackages pp) ];
             };
           }
         );

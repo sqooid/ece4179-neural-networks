@@ -1,3 +1,4 @@
 .direnv/
 logs/
 data/
+!labs/lab-4/logs/

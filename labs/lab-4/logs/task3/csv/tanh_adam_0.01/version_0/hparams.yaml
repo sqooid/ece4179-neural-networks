@@ -1,0 +1,4 @@
+activation: tanh
+lr: 0.01
+num_classes: 4
+optimizer: adam

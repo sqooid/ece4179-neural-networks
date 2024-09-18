@@ -49,6 +49,7 @@
               pandas
               lightning
               torchsummary
+              tensorboard
             ];
             python = pkgs.python312.override {
               self = python;

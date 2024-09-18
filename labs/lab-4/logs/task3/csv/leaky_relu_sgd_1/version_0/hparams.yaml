@@ -1,0 +1,4 @@
+activation: leaky_relu
+lr: 1
+num_classes: 4
+optimizer: sgd

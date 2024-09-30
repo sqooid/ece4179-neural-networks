@@ -5,3 +5,4 @@ data/
 /.venv
 *.deb
 *.whl
+.envrc

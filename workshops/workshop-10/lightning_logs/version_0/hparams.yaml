@@ -1,0 +1,4 @@
+hidden_size: 128
+lr: 0.001
+num_layers: 2
+seq_len: 3
